@@ -1,0 +1,50 @@
+type Query {
+    getAllPatients: [Patient]
+    getPatientById(id: Int!): Patient
+}
+
+type Mutation {
+    addPatient(
+        firstName: String!,
+        lastName: String!,
+        dateOfBirth: String!,
+        gender: String!,
+        contactNumber: String!,
+        email: String!,
+        address: String,
+        bloodGroup: String!,
+        emergencyContactName: String,
+        emergencyContactNumber: String
+    ): Patient
+
+    updatePatient(
+        id: Int!,
+        firstName: String!,
+        lastName: String!,
+        dateOfBirth: String!,
+        gender: String!,
+        contactNumber: String!,
+        email: String!,
+        address: String,
+        bloodGroup: String!,
+        emergencyContactName: String,
+        emergencyContactNumber: String
+    ): Patient
+
+    deletePatient(id: Int!): Boolean
+}
+
+type Patient {
+    patientID: Int
+    firstName: String
+    lastName: String
+    dateOfBirth: String
+    gender: String
+    contactNumber: String
+    email: String
+    address: String
+    bloodGroup: String
+    emergencyContactName: String
+    emergencyContactNumber: String
+    dateOfRegistration: String
+}

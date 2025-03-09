@@ -1,0 +1,1 @@
+2025-02-18T11:02:40.860+05:30  WARN 33324 --- [GraphQl-AMEY-APP] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
